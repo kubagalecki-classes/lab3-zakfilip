@@ -3,7 +3,7 @@ Masz dane następujące 4 klasy:
 - `Statek`: posiada abstrakcyjną metodę `unsigned int transportuj()`
 - `Tankowiec`: dziedziczy po `Statek`, nadpisuje metodę `transportuj`
 - `Zaglowiec`: dziedziczy po `Statek`, nadpisuje metodę `transportuj`
-- `Stocznia`: posiada metodę `Statek* operator()()`, który tworzy (losowo wybrany) statek (`Tankowiec` lub `Zaglowiec`) i zwraca wskaźnik do niego, posiada konstruktor domyślny
+- `Stocznia`: posiada metodę `Statek* operator()()`, który tworzy (losowo wybrany) statek (`Tankowiec` lub `Zaglowiec`) i zwraca wskaźnik do niego, posiada konstruktor domyślny.
 Krótko mówiąc, `Stocznia` jest fabryką statków (w programistycznym tego słowa znaczeniu).
 Możemy stworzyć nowy statek wołając
 ```C++
