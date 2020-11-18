@@ -9,13 +9,14 @@ unsigned int transportujFlota(unsigned int towar)
     {
         Stocznia stocznia{};
         int z = 0;
+	unsigned int tmp = 0;
         do
         {
             Statek* s1 = stocznia();
             if (dynamic_cast<Zaglowiec*>(s1))++z;
-            towar = -(s1->transportuj());
+            tmp += s1->transportuj();
             delete s1;
-        } while (towar >= 0);
+        } while (tmp < towar);
         return z;
     }
 }
